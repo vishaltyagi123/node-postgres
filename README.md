@@ -24,7 +24,7 @@ Step 5. Auth Routes => A. api/auth/login
 
 Step 6.  User Routes => A. api/v1/getUsers
                         B. api/v1/deleteUser     => with auth (Only admin can delete)
-                        C. api/v1/updateUser/id  => with auth (Only admin and Same user can update name )
+                        C. api/v1/updateUser/id  and paylaod { first_name : "" , last_name : "" }  => with auth (Only admin and Same user can update name )
 
 
 
