@@ -27,7 +27,8 @@ const updateUser = (req, res, next) => {
     if(err) return res.status(400).json({err});
     if(data.rowCount){
       connectionPool.query(
-        'UPDATE account SET first_name = $1, last_name = $2, WHERE id = $3', [first_name, last_name, id],
+        'UPDATE account SET first_name = $1, last_name = $2 WHERE id = $3',
+        [first_name, last_name, id],
         (err, result) => {
           if (err) return res.status(400).json(err);
           res.status(200).json({'message':'User Modified'});
