@@ -11,6 +11,9 @@ const PG_PORT = process.env.PG_PORT;
 const PG_DATABASE = process.env.PG_DATABASE
 const PG_USER = process.env.PG_USER
 
+const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
+const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET;
+
 module.exports = { 
     PORT,
     PG_PASSWORD,
@@ -18,5 +21,7 @@ module.exports = {
     PG_PORT,
     PG_DATABASE,
     PG_USER,
-    JWT_SECRET
+    JWT_SECRET,
+    GOOGLE_CLIENT_ID,
+    GOOGLE_CLIENT_SECRET
 };
